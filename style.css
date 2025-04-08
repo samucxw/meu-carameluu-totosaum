@@ -114,3 +114,26 @@ h1 {
     opacity: 0;
   }
 }
+
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+  opacity: 0.4; /* Deixa o vídeo levemente transparente */
+}
+
+/* E opcionalmente, uma sobreposição rosinha suave */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 204, 213, 0.4), rgba(255, 230, 240, 0.4));
+  z-index: -1;
+}
