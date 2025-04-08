@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="https://files.catbox.moe/1in9dj.mp3" type="audio/mp3">
-    Seu navegador não suporta áudio.
-  </audio>
+  <!-- Música de fundo -->
+  <audio id="bgmusic" src="up.mp3" preload="auto" loop></audio>
 
+  <!-- Efeitos de coração -->
   <div class="hearts"></div>
 
+  <!-- Conteúdo principal -->
   <div class="container">
     <h1>💖 Oi, Wee!</h1>
     <p class="sub">Feliz aniversário, meu caramelo 🎂</p>
@@ -23,18 +23,16 @@
     <p>Com todo meu amor,</p>
     <p class="assinatura">– Sam</p>
 
-<div class="buttons">
-  <a href="galeria.html" class="btn">📸 Ver nossas fotos</a>
-  <a href="joguinho.html" class="btn">🎮 Nosso joguinho de amor</a>
-  <a href="#" onclick="document.getElementById('bgmusic').play()" class="btn">▶️ Tocar música</a>
-  <button onclick="teAmoWee()" class="btn special">💘 Clica aqui se 'ocê' me ama</button>
-</div>
+    <!-- Botões -->
+    <div class="buttons">
+      <a href="galeria.html" class="btn">📸 Ver nossas fotos</a>
+      <a href="joguinho.html" class="btn">🎮 Nosso joguinho de amor</a>
+      <a href="#" onclick="document.getElementById('bgmusic').play()" class="btn">▶️ Tocar música</a>
+      <button onclick="teAmoWee()" class="btn special">💘 Clica aqui se 'ocê' me ama</button>
+    </div>
+  </div>
 
-<audio id="bgmusic" autoplay loop>
-  <source src="https://files.catbox.moe/1in9dj.mp3" type="audio/mp3">
-  Seu navegador não suporta áudio.
-</audio>
-
-<script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
