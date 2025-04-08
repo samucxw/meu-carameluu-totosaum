@@ -3,58 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nossas fotos 💑</title>
-  <link rel="stylesheet" href="style.css">
+  <title>💖 Nossos Momentos - Sam & Wee 💖</title>
   <style>
     body {
-      background: #fff0f5;
-      padding: 40px 20px;
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
       font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      color: #e75480;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-weight: normal;
+      margin-top: 0;
+      font-size: 1.2em;
+      color: #ff6f91;
     }
 
     .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      max-width: 1000px;
-      margin: auto;
+      max-width: 1200px;
+      margin: 40px auto;
     }
 
     .galeria img {
       width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .galeria img:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     }
 
-    h1 {
-      text-align: center;
-      color: #e75480;
-      margin-bottom: 30px;
+    .legenda {
+      font-size: 0.95em;
+      color: #c94c7c;
+      margin-top: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>📸 Momentos nossos, Sam & Wee 💞</h1>
+  <h1>📸 Nossos Momentos</h1>
+  <h2>Uma coleção do nosso amor, Sam & Wee 💞</h2>
+
   <div class="galeria">
-    <img src="fotos/foto_2025-04-07_23-57-44.jpg" alt="foto 1">
-    <img src="fotos/foto_2025-04-07_23-57-57.jpg" alt="foto 2">
-    <img src="fotos/foto_2025-04-07_23-58-02.jpg" alt="foto 3">
-    <img src="fotos/foto_2025-04-07_23-58-08.jpg" alt="foto 4">
-    <img src="fotos/foto_2025-04-07_23-58-15.jpg" alt="foto 5">
-    <img src="fotos/foto_2025-04-07_23-58-19.jpg" alt="foto 6">
-    <img src="fotos/foto_2025-04-07_23-58-28.jpg" alt="foto 7">
-    <img src="fotos/foto_2025-04-07_23-58-33.jpg" alt="foto 8">
-    <img src="fotos/foto_2025-04-07_23-58-43.jpg" alt="foto 9">
-    <img src="fotos/foto_2025-04-07_23-58-48.jpg" alt="foto 10">
-    <img src="fotos/foto_2025-04-07_23-58-53.jpg" alt="foto 11">
-    <img src="fotos/foto_2025-04-07_23-58-59.jpg" alt="foto 12">
-    <img src="fotos/foto_2025-04-07_23-59-08.jpg" alt="foto 13">
-    <img src="fotos/foto_2025-04-07_23-59-13.jpg" alt="foto 14">
+    <div>
+      <img src="fotos/foto_2025-04-07_23-57-44.jpg" alt="foto 1">
+      <div class="legenda">Nosso jeitinho único 💫</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-57-57.jpg" alt="foto 2">
+      <div class="legenda">Risadas que aquecem o coração 🥹</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-02.jpg" alt="foto 3">
+      <div class="legenda">Você é meu mundo 🌍</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-08.jpg" alt="foto 4">
+      <div class="legenda">Olhares que dizem tudo 💘</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-15.jpg" alt="foto 5">
+      <div class="legenda">Meus braços são seu lar 🫂</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-19.jpg" alt="foto 6">
+      <div class="legenda">Amor que não cabe na foto 📷</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-28.jpg" alt="foto 7">
+      <div class="legenda">Momentos eternos 💞</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-33.jpg" alt="foto 8">
+      <div class="legenda">Minha caramelinho preferida 🍯</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-43.jpg" alt="foto 9">
+      <div class="legenda">Só você me faz sorrir assim 😄</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-48.jpg" alt="foto 10">
+      <div class="legenda">E esse sorrisinho?? 🥰</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-53.jpg" alt="foto 11">
+      <div class="legenda">Cúmplices de tudo 💑</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-58-59.jpg" alt="foto 12">
+      <div class="legenda">Você é o que eu pedi a Deus 🙏</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-59-08.jpg" alt="foto 13">
+      <div class="legenda">Meu presente eterno 🎁</div>
+    </div>
+    <div>
+      <img src="fotos/foto_2025-04-07_23-59-13.jpg" alt="foto 14">
+      <div class="legenda">Te amo mais que tudo 💘</div>
+    </div>
   </div>
 </body>
 </html>
