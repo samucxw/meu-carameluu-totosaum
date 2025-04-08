@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sam + Wee 💘</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Música de fundo -->
-  <audio id="bgmusic" src="up.mp3" preload="auto" loop></audio>
+  <audio id="bgmusic" src="up.mp3" preload="auto" loop autoplay></audio>
 
   <!-- Efeitos de coração -->
   <div class="hearts"></div>
@@ -25,14 +25,34 @@
 
     <!-- Botões -->
     <div class="buttons">
-      <a href="galeria.html" class="btn">📸 Ver nossas fotos</a>
-      <a href="joguinho.html" class="btn">🎮 Nosso joguinho de amor</a>
+      <a href="galeria.html" class="btn" target="_blank">📸 Ver nossas fotos</a>
+      <a href="joguinho.html" class="btn" target="_blank">🎮 Nosso joguinho de amor</a>
       <a href="#" onclick="document.getElementById('bgmusic').play()" class="btn">▶️ Tocar música</a>
       <button onclick="teAmoWee()" class="btn special">💘 Clica aqui se 'ocê' me ama</button>
     </div>
   </div>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <script>
+    // Criação de corações flutuando
+    const heartsContainer = document.querySelector('.hearts');
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 5 + Math.random() * 5 + 's';
+      heartsContainer.appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+
+    setInterval(createHeart, 300);
+
+    // Botão "ocê me ama"
+    function teAmoWee() {
+      alert("Eu sabia que ocê me ama!!! 😍 Te amo mais ainda caramelo 💞");
+    }
+  </script>
 </body>
 </html>
+
