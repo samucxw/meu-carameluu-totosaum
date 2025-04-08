@@ -7,13 +7,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Música de fundo -->
+  <!-- 🎥 Vídeo de fundo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="fundo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo :(
+  </video>
+
+  <!-- 🎶 Música de fundo -->
   <audio id="bgmusic" src="up.mp3" preload="auto" loop autoplay></audio>
 
-  <!-- Efeitos de coração -->
+  <!-- 💗 Efeitos de coração -->
   <div class="hearts"></div>
 
-  <!-- Conteúdo principal -->
+  <!-- 💌 Conteúdo principal -->
   <div class="container">
     <h1>💖 Oi, Wee!</h1>
     <p class="sub">Feliz aniversário, meu caramelo 🎂</p>
@@ -23,7 +29,7 @@
     <p>Com todo meu amor,</p>
     <p class="assinatura">– Sam</p>
 
-    <!-- Botões -->
+    <!-- 💫 Botões fofos -->
     <div class="buttons">
       <a href="galeria.html" class="btn" target="_blank">📸 Ver nossas fotos</a>
       <a href="joguinho.html" class="btn" target="_blank">🎮 Nosso joguinho de amor</a>
@@ -32,7 +38,7 @@
     </div>
   </div>
 
-  <!-- Scripts -->
+  <!-- 💻 Scripts -->
   <script>
     // Criação de corações flutuando
     const heartsContainer = document.querySelector('.hearts');
@@ -55,4 +61,3 @@
   </script>
 </body>
 </html>
-
